@@ -1,0 +1,90 @@
+.Advaita_world_logo {
+  color: black;
+  width: 20%;
+  height: 20%;
+  position: relative;
+  top: 600px;
+}
+
+.Navigation-Header {
+  font-size: 15px;
+  width: 94%;
+}
+
+.GenesisCollection {
+  color: white;
+}
+
+ul {
+  font-size: 14px;
+  background-color: red;
+  width: 94%;
+}
+
+li {
+  list-style: none;
+  float: left;
+  margin-left: 15px;
+  width: 120px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+.Navigation-Tail {
+  font-size: 14px;
+  width: 94%;
+}
+
+.Tail-List ul {
+  font-size: 14px;
+  background-color: red;
+  width: 94%;
+}
+
+.Tail-List li {
+  list-style: none;
+  float: left;
+  margin-left: 15px;
+  width: 100px;
+}
+
+.Twitter {
+  color: black;
+  width: 20%;
+  height: 20%;
+  position: relative;
+}
+
+.Discord {
+  color: black;
+  width: 20%;
+  height: 20%;
+  position: relative;
+}
+
+.Telegram {
+  color: black;
+  width: 20%;
+  height: 20%;
+  position: relative;
+}
+
+.Youtube {
+  color: black;
+  width: 20%;
+  height: 20%;
+  position: relative;
+}
+
+.Medium {
+  color: black;
+  width: 20%;
+  height: 20%;
+  position: relative;
+}

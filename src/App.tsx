@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Layout } from "antd";
+import "./App.css";
+import URLRouter from "./router/URLRouter";
+import advaita_world_logo from "./pages/statics/img/advaita-world-logo.png";
+import Navigation_Header from "./pages/Navigation-Header";
+import Navigation_Tail from "./pages/Navigation-Tail";
+const { Content } = Layout;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        <div className="App-Navigation-Header">
+          <Navigation_Header />
+        </div>
+      </div>
+      <div className="App-body">
+        <div className="URLRouter">
+          <img
+            src={advaita_world_logo}
+            alt="logo"
+            className="Advaita_world_logo"
+          />
+        </div>
+      </div>
+      <div className="App-tail">
+        <div className="App-Navigation-Tail">
+          <Navigation_Tail />
+        </div>
+      </div>
     </div>
   );
 }

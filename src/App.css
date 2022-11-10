@@ -1,38 +1,48 @@
+* {
+  padding: 0; /*清除内边距*/
+  margin: 0; /*清除外边距*/
+  background-color: black;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(29, 28, 28);
+}
+.App-body {
+  top: 80px;
+  background-color: black;
+  width: 100%;
+  height: 1620px;
+  position: relative;
+}
+.App-tail {
+  height: 80px;
+  position: relative;
+  top: 1620px;
+  /* background-color: rgb(29, 28, 28); */
+}
+.Advaita_world_logo {
+  color: black;
+  width: 30%;
+  height: 20%;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-Navigation-Header {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  left: 3%;
+}
+.App-Navigation-Tail {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  left: 29%;
 }
