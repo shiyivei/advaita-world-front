@@ -1,11 +1,3 @@
-.Advaita_world_logo {
-  color: black;
-  width: 20%;
-  height: 20%;
-  position: relative;
-  top: 600px;
-}
-
 .Navigation-Header {
   font-size: 15px;
   width: 94%;
@@ -40,6 +32,10 @@ a:hover {
   font-size: 14px;
   width: 94%;
 }
+.Navigation-Header {
+  font-size: 14px;
+  width: 94%;
+}
 
 .Tail-List ul {
   font-size: 14px;
@@ -47,7 +43,7 @@ a:hover {
   width: 94%;
 }
 
-.Tail-List li {
+.Header-List li {
   list-style: none;
   float: left;
   margin-left: 15px;
@@ -87,4 +83,9 @@ a:hover {
   width: 20%;
   height: 20%;
   position: relative;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
 }

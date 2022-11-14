@@ -23,25 +23,22 @@ export default function Navigation_Header() {
               style={{
                 textDecoration: "none",
               }}
-              to="element"
+              to="/element"
             >
-              Element
+              Research
             </Link>
           </li>
           <li className="Whitepaper">
-            <Link
-              style={{ textDecoration: "none" }}
-              to="whitepaper"
-            >
+            <a href="https://shiyiveis-organization.gitbook.io/advaita-paper/">
               Whitepaper
-            </Link>
+            </a>
           </li>
           <li className="ClaimSNS">
             <Link
               style={{ textDecoration: "none" }}
               to="claimsns"
             >
-              ClaimSNS
+              Omsat Watch
             </Link>
           </li>
           <li className="AdvaitaDAO">

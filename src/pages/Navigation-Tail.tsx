@@ -14,39 +14,49 @@ export default function Navigation_Tail() {
       <div className="Tail-List">
         <ul className="Navigation-Tail">
           <li>
-            <img
-              src={twitter}
-              alt="logo"
-              className="Twitter"
-            />
+            <a href="https://twitter.com/AdvaitaWorld">
+              <img
+                src={twitter}
+                alt="logo"
+                className="Twitter"
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={discord}
-              alt="logo"
-              className="Discord"
-            />
+            <a href="https://discord.gg/bNhksbBf">
+              <img
+                src={discord}
+                alt="logo"
+                className="Discord"
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={telegram}
-              alt="logo"
-              className="Telegram"
-            />
+            <a href="https://t.me/gE3gTPQVGsA0ZjE1">
+              <img
+                src={telegram}
+                alt="logo"
+                className="Telegram"
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={youtube}
-              alt="logo"
-              className="Youtube"
-            />
+            <a href="https://twitter.com/AdvaitaWorld">
+              <img
+                src={youtube}
+                alt="logo"
+                className="Youtube"
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={medium}
-              alt="logo"
-              className="Medium"
-            />
+            <a href="https://twitter.com/AdvaitaWorld">
+              <img
+                src={medium}
+                alt="logo"
+                className="Medium"
+              />
+            </a>
           </li>
         </ul>
       </div>

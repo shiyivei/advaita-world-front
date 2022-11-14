@@ -1,0 +1,20 @@
+.main-app {
+  text-align: center;
+}
+
+.cta-button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  min-width: 250px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+  background-color: yellow;
+}
+
+.connect-wallet-button {
+  background: rgb(32, 129, 226);
+}

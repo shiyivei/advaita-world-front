@@ -6,6 +6,7 @@ import Element from "../pages/Element";
 import Deck from "../pages/Deck";
 import NFTReborn from "../pages/NFTReborn";
 import ClaimSNS from "../pages/ClaimSNS";
+import { Link } from "react-router-dom";
 
 import App from "../App";
 

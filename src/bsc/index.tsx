@@ -1,10 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { redirect } from "react-router-dom";
-
-const WP = () => {};
-
-export default function Whitepaper() {
+export default function Deck() {
   //   const { imei, ts, nonce, api_key, signature } =
   //     useParams();
 
@@ -28,8 +24,6 @@ export default function Whitepaper() {
   //     });
   //   store_watch(imei);
   return (
-    <div>
-      {/* <h1>Watch Page</h1> */}Whitepaper
-    </div>
+    <div>{/* <h1>Watch Page</h1> */}Deck</div>
   );
 }
