@@ -1,5 +1,5 @@
 .Navigation-Header {
-  font-size: 15px;
+  font-size: 1.2vw;
   width: 94%;
 }
 
@@ -8,7 +8,6 @@
 }
 
 ul {
-  font-size: 14px;
   background-color: red;
   width: 94%;
 }
@@ -29,16 +28,10 @@ a:hover {
 }
 
 .Navigation-Tail {
-  font-size: 14px;
-  width: 94%;
-}
-.Navigation-Header {
-  font-size: 14px;
   width: 94%;
 }
 
 .Tail-List ul {
-  font-size: 14px;
   background-color: red;
   width: 94%;
 }

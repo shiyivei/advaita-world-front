@@ -19,6 +19,10 @@ import {
 const URLRouter = (props: any) => {
   return (
     <>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      />
       <BrowserRouter>
         <Routes>
           <Route

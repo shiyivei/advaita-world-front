@@ -14,7 +14,7 @@ export default function ConnectWallet() {
     return (
       <button
         onClick={connectWalletHandler}
-        className="cta-button connect-wallet-button"
+        className="cta-button"
       >
         Login
       </button>
@@ -23,7 +23,6 @@ export default function ConnectWallet() {
 
   return (
     <div className="main-app">
-      {/* <h1>Scrappy Squirrels Tutorial</h1> */}
       <div>{connectWalletButton()}</div>
     </div>
   );

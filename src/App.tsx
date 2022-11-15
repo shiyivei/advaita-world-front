@@ -26,17 +26,7 @@ function App() {
           alt="logo"
           className="Advaita_world_logo"
         />
-        <div className="URLRouter">
-          {/* <nav>
-            <Link to="/">首页</Link>
-            <span> | </span>
-            <Link to="/about">关于</Link>
-            <span> | </span>
-            <Link to="/join">加入</Link>
-            <span> | </span>
-            <hr />
-          </nav> */}
-        </div>
+        <div className="URLRouter"></div>
       </div>
       <div className="App-tail">
         <div className="App-Navigation-Tail">
