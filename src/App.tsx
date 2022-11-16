@@ -4,7 +4,6 @@ import "./App.css";
 import advaita_world_logo from "./pages/statics/img/backgroud-logo.png";
 import Navigation_Header from "./pages/Navigation-Header";
 import Navigation_Tail from "./pages/Navigation-Tail";
-import { Link } from "react-router-dom";
 import ConnectWallet from "./components/Wallet";
 
 function App() {

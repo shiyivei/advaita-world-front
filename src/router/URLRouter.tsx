@@ -6,7 +6,7 @@ import Element from "../pages/Element";
 import Deck from "../pages/Deck";
 import NFTReborn from "../pages/NFTReborn";
 import ClaimSNS from "../pages/ClaimSNS";
-import { Link } from "react-router-dom";
+import Login from "../pages/Login";
 
 import App from "../App";
 
@@ -56,6 +56,10 @@ const URLRouter = (props: any) => {
           <Route
             path="/"
             element={<App />}
+          ></Route>
+          <Route
+            path="/login"
+            element={<Login />}
           ></Route>
         </Routes>
       </BrowserRouter>

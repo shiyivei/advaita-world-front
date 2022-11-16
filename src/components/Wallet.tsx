@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import "./Components.css";
+import { Link } from "react-router-dom";
 
 export default function ConnectWallet() {
   const checkWalletIsConnected = () => {};
@@ -12,12 +13,19 @@ export default function ConnectWallet() {
 
   const connectWalletButton = () => {
     return (
-      <button
-        onClick={connectWalletHandler}
-        className="cta-button"
-      >
-        Login
-      </button>
+      <>
+        <Link
+          style={{ textDecoration: "none" }}
+          to="login"
+        >
+          <button
+            onClick={connectWalletHandler}
+            className="cta-button"
+          >
+            Login
+          </button>
+        </Link>
+      </>
     );
   };
 
