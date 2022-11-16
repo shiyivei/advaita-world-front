@@ -1,11 +1,11 @@
 import React from "react";
 import { Layout } from "antd";
 import "./App.css";
-import advaita_world_logo from "./pages/statics/img/advaita-world-logo.png";
+import advaita_world_logo from "./pages/statics/img/backgroud-logo.png";
 import Navigation_Header from "./pages/Navigation-Header";
 import Navigation_Tail from "./pages/Navigation-Tail";
-import ConnectWallet from "./components/Wallet";
 import { Link } from "react-router-dom";
+import ConnectWallet from "./components/Wallet";
 
 function App() {
   return (
@@ -24,8 +24,15 @@ function App() {
         <img
           src={advaita_world_logo}
           alt="logo"
-          className="Advaita_world_logo"
+          className="Advaita-Logo"
         />
+        {/* <div className="Video">
+          <video
+            src="https://youtu.be/YdCYT3LL3dw"
+            controls
+          ></video>
+        </div> */}
+
         <div className="URLRouter"></div>
       </div>
       <div className="App-tail">

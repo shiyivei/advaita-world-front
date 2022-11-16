@@ -1,22 +1,5 @@
-.Navigation-Header {
-  font-size: 1.2vw;
-  width: 94%;
-}
-
 .GenesisCollection {
   color: white;
-}
-
-ul {
-  background-color: red;
-  width: 94%;
-}
-
-li {
-  list-style: none;
-  float: left;
-  margin-left: 15px;
-  width: 120px;
 }
 
 a {
@@ -28,26 +11,35 @@ a:hover {
 }
 
 .Navigation-Tail {
-  width: 94%;
+  list-style: none;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  /* background-color: purple; */
+  /* margin: 0 10%; */
 }
 
-.Tail-List ul {
-  background-color: red;
-  width: 94%;
+.Navigation-Header {
+  list-style: none;
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  /* background-color: purple; */
+  margin: 0 10%;
 }
 
 .Header-List li {
-  list-style: none;
-  float: left;
-  margin-left: 15px;
-  width: 100px;
+  width: 20%;
+}
+
+.Tail-List li {
+  width: 20%;
 }
 
 .Twitter {
-  color: black;
   width: 20%;
   height: 20%;
-  position: relative;
 }
 
 .Discord {

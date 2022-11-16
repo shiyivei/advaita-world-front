@@ -6,7 +6,7 @@ import "./Pages.css";
 export default function Navigation_Header() {
   return (
     <div>
-      <div className="Header-list">
+      <div className="Header-List">
         <ul className="Navigation-Header">
           <li className="GenesisCollection">
             <Link

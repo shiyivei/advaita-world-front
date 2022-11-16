@@ -1,61 +1,109 @@
 * {
   padding: 0; /*清除内边距*/
   margin: 0; /*清除外边距*/
-  /* background-color: rgb(76, 78, 76); */
+  /* background-image: url("./pages/statics/img/background.png"); */
+  background-size: 100% auto;
 }
 
 .App {
+  height: 100%;
+  width: 100%;
   text-align: center;
-}
-
-.App-body {
-  background-color: rgb(117, 159, 160);
-  height: 1200%;
-  position: relative;
+  background-image: url("./pages/statics/img/background.png");
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .App-header {
-  position: relative;
-  height: 80px;
-  background-color: rgb(29, 28, 28);
+  display: flex;
+  height: 12vh;
+  width: 100vw;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  /* background-color: rgb(29, 28, 28); */
+  margin: 0;
+  position: fixed;
 }
+
+.App-body {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 250vh;
+  /* background-color: rgb(212, 202, 202); */
+  margin: 0;
+}
+
 .App-tail {
-  position: relative;
-  height: 80px;
-  background-color: rgb(29, 28, 28);
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 12vh;
+  /* background-color: rgb(29, 28, 28); */
+  margin: 0;
 }
 
 .App-Navigation-Header {
-  position: relative;
-  top: 40%;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  /* background-color: rgb(255, 153, 0); */
 }
 
 .App-Navigation-Tail {
-  position: relative;
-  top: 40%;
-  width: 60%;
-  left: 26%;
-  background-color: rgb(239, 34, 34);
+  width: 100%;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  /* background-color: rgb(255, 153, 0); */
 }
 
-.Advaita_world_logo {
-  width: 25%;
-  height: 10%;
+.Advaita-Logo {
+  width: 15%;
+  top: -30%;
   position: relative;
-  top: 45%;
+  animation: loading 10s linear infinite;
+  /* background-color: rgb(255, 153, 0); */
+}
+
+@keyframes loading {
+  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+  0% {
+    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  /* from {
+    top: 0%;
+  }
+  to {
+    top: 50%;
+  } */
+
+  /* 0% { */
+  /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+  /* transform: scale(0); */
+  /* } */
+  /* 100% { */
+  /* transform: scale(100%); */
+  /* } */
 }
 
 .Column {
   position: relative;
-  left: 3%;
-  width: 94%;
-  background-color: rgb(239, 34, 34);
+  width: 100%;
+  left: -3%;
+
+  /* background-color: rgb(148, 143, 143); */
 }
+
 .Login {
-  position: absolute;
-  text-align: center;
-  left: 77%;
-  width: 17%;
-  transform: translate(15%, -30%);
-  top: 50%;
+  width: 15%;
+  position: relative;
+  right: 8%;
+  /* height: 15vh; */
 }
