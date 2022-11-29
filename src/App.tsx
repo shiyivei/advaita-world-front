@@ -1,39 +1,46 @@
-import React from "react";
 import { Layout } from "antd";
 import "./App.css";
 import advaita_world_logo from "./pages/statics/img/backgroud-logo.png";
+import art_adt_combination from "./pages/statics/img/art-adt-combination.png";
 import Navigation_Header from "./pages/Navigation-Header";
 import Navigation_Tail from "./pages/Navigation-Tail";
 import ConnectWallet from "./components/Wallet";
+import React, {
+  useState,
+  useEffect,
+} from "react";
 
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
-        <div className="App-Navigation-Header">
-          <div className="Column">
-            <Navigation_Header />
-          </div>
-          <div className="Login">
-            <ConnectWallet />
-          </div>
-        </div>
-      </div>
       <div className="App-body">
         <img
           src={advaita_world_logo}
           alt="logo"
           className="Advaita-Logo"
         />
-        {/* <div className="Video">
-          <video
-            src="https://youtu.be/YdCYT3LL3dw"
-            controls
-          ></video>
-        </div> */}
+        <div className="Main-content">
+          精彩内容，即将呈现
+        </div>
 
-        <div className="URLRouter"></div>
+        {/* <img
+          src={art_adt_combination}
+          alt="logo"
+          className="Advaita-Coin"
+        /> */}
+
+        <div className="App-header">
+          <div className="App-Navigation-Header">
+            <div className="Column">
+              <Navigation_Header />
+            </div>
+            <div className="Login">
+              <ConnectWallet />
+            </div>
+          </div>
+        </div>
       </div>
+
       <div className="App-tail">
         <div className="App-Navigation-Tail">
           <Navigation_Tail />

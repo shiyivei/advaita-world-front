@@ -20,18 +20,23 @@
   width: 100vw;
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
-  /* background-color: rgb(29, 28, 28); */
+
   margin: 0;
   position: fixed;
+  /* margin-top: 12vh; */
+  top: 0;
+  background-color: rgba(14, 9, 9, 0.343);
 }
 
 .App-body {
   display: flex;
+  flex-direction: column;
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
-  height: 250vh;
-  /* background-color: rgb(212, 202, 202); */
+  height: 110vh;
+  /* background-color: rgb(233, 27, 27); */
   margin: 0;
+  color: white;
 }
 
 .App-tail {
@@ -62,9 +67,18 @@
 
 .Advaita-Logo {
   width: 15%;
-  top: -30%;
+  top: -5%;
   position: relative;
-  animation: loading 10s linear infinite;
+  animation: loading 60s linear infinite;
+  /* background-color: rgb(255, 153, 0); */
+}
+
+.Advaita-Coin {
+  width: 5%;
+  top: -51%;
+  left: -47%;
+  position: relative;
+  animation: loading 60s linear infinite;
   /* background-color: rgb(255, 153, 0); */
 }
 
@@ -78,10 +92,10 @@
     transform: rotate(360deg);
   }
   /* from {
-    top: 0%;
+    top: -50%;
   }
   to {
-    top: 50%;
+    top: -20%;
   } */
 
   /* 0% { */
@@ -106,4 +120,12 @@
   position: relative;
   right: 8%;
   /* height: 15vh; */
+}
+
+.Main-content {
+  font-size: 2vw;
+  color: orange;
+  position: relative;
+
+  top: 5%;
 }
