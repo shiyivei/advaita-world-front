@@ -16,7 +16,7 @@ export default function ConnectWallet() {
       <>
         <Link
           style={{ textDecoration: "none" }}
-          to="login"
+          to="/login"
         >
           <button
             onClick={connectWalletHandler}

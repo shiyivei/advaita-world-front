@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import advaita_world_logo from "../pages/statics/img/backgroud-logo.png";
-import Navigation_Header from "../pages/Navigation-Header";
-import Navigation_Tail from "../pages/Navigation-Tail";
+import Navigation_Header from "./Navigation-Header";
+import Navigation_Tail from "./Navigation-Tail";
 import ConnectWallet from "../components/Wallet";
 export default function Element() {
   //   const { imei, ts, nonce, api_key, signature } =

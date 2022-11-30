@@ -13,12 +13,12 @@ export default function Navigation_Header() {
               Omsat Store
             </a>
           </li>
-          <li className="Element">
+          <li className="Research">
             <Link
               style={{
                 textDecoration: "none",
               }}
-              to="/element"
+              to="/research"
             >
               Research
             </Link>
@@ -28,10 +28,10 @@ export default function Navigation_Header() {
               Whitepaper
             </a>
           </li>
-          <li className="ClaimSNS">
+          <li className="OmSatWatch">
             <Link
               style={{ textDecoration: "none" }}
-              to="/claimsns"
+              to="/omsatwatch"
             >
               Omsat Watch
             </Link>
@@ -39,7 +39,7 @@ export default function Navigation_Header() {
           <li className="AdvaitaDAO">
             <Link
               style={{ textDecoration: "none" }}
-              to="/advaitadao"
+              to="/cakrawatch"
             >
               Cakra Watch
             </Link>

@@ -15,7 +15,7 @@ export default function TestRouter() {
             PageOne
           </Link>
         </li>
-        <li className="PageTwo" font-color="red">
+        <li className="PageTwo">
           <Link
             style={{
               textDecoration: "none",

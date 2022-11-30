@@ -5,6 +5,7 @@ import art_adt_combination from "./pages/statics/img/art-adt-combination.png";
 import Navigation_Header from "./pages/Navigation-Header";
 import Navigation_Tail from "./pages/Navigation-Tail";
 import ConnectWallet from "./components/Wallet";
+import { Link } from "react-router-dom";
 import React, {
   useState,
   useEffect,
@@ -34,9 +35,14 @@ function App() {
             <div className="Column">
               <Navigation_Header />
             </div>
-            <div className="Login">
-              <ConnectWallet />
-            </div>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="/login"
+            >
+              <div className="Login">
+                <ConnectWallet />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import GenesisCollection from "../pages/GenesisCollection";
 import Whitepaper from "../pages/Whitepaper";
-import AdvaitaDAO from "../pages/AdvaitaDAO";
-import Element from "../pages/Element";
+import CakraWatch from "../pages/CakraWatch";
+import Research from "../pages/Research";
 import Deck from "../pages/Deck";
 import NFTReborn from "../pages/NFTReborn";
-import ClaimSNS from "../pages/ClaimSNS";
+import OmSatWatch from "../pages/OmSatWatch";
 import Login from "../pages/Login";
 
 import App from "../App";
@@ -26,20 +26,20 @@ const URLRouter = (props: any) => {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/advaitadao"
-            element={<AdvaitaDAO />}
+            path="/cakrawatch"
+            element={<CakraWatch />}
           ></Route>
           <Route
-            path="/claimsns"
-            element={<ClaimSNS />}
+            path="/omsatwatch"
+            element={<OmSatWatch />}
           ></Route>
           <Route
             path="/deck"
             element={<Deck />}
           ></Route>
           <Route
-            path="/element"
-            element={<Element />}
+            path="/research"
+            element={<Research />}
           ></Route>
           <Route
             path="/genesiscollection"
