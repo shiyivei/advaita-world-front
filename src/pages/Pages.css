@@ -94,7 +94,7 @@ a:visited {
   border-radius: 10px;
   padding: 2%;
   width: 21vw;
-  height: 4vh;
+  height: 5vh;
   background-color: #ffffff;
   position: relative;
 }
@@ -105,24 +105,26 @@ a:visited {
   border-radius: 10px;
   padding: 2%;
   width: 21vw;
-  height: 4vh;
+  height: 5vh;
   background-color: #ffffff;
   top: 1.5vh;
   position: relative;
 }
 
-.Input-Verification-Code input {
+.Inner-list input {
   outline-style: none;
   border: 0.15vh solid rgb(0, 225, 255);
   border-radius: 10px;
   padding: 2%;
   width: 11vw;
-  height: 4vh;
+  height: 3vh;
   background-color: #ffffff;
   /* top: 2vh; */
   position: relative;
 
   flex: left;
+
+  background-color: rgb(0, 255, 255);
 }
 
 .Check-Remember {
@@ -130,12 +132,14 @@ a:visited {
   /* border: 0.15vh solid rgb(0, 225, 255); */
   border-radius: 10px;
   padding: 2%;
-  width: 21vw;
-  height: 2vh;
+  width: 42vw;
+  height: 4vh;
   /* background-color: #dbd4d4; */
   top: 2vh;
   position: relative;
   font-size: 1vw;
+  float: center;
+  flex: center;
 }
 
 .Submit-button {
@@ -146,7 +150,7 @@ a:visited {
 
   /* 使用宽高 vm,vh设置 div 块的宽高*/
   width: 21.5vw;
-  height: 4.8vh;
+  height: 5vh;
 
   /* 圆角 */
   border-radius: 10px;
@@ -157,7 +161,7 @@ a:visited {
 
   /* 位置定位相对,使用top,bottom,left,right 移动位置 */
   position: relative;
-  top: 2.5vh;
+  /* top: 2.5vh; */
   left: 0%;
 
   /* 边框样式 */
@@ -372,11 +376,9 @@ a:visited {
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
 
-  height: 50vh;
+  height: 60vh;
 
   position: relative;
-  top: 0%;
-  left: 0%;
 
   /* background-color: rgb(0, 248, 186); */
 }
@@ -394,7 +396,7 @@ a:visited {
   height: 100%;
 
   /* 调整增大外边距 上 右 下 左 */
-  margin: 1.5vh 10vw 1vh 1vw;
+  margin: -5vh 10vw 1vh 1vw;
   /* 调整增大内边距 上 右 下 左 */
   padding: 0vh 0vw 0vh 0vw;
 
@@ -412,7 +414,7 @@ a:visited {
   align-items: center; /* 垂直居中 */
 
   position: relative;
-  top: -2vh;
+  top: -6vh;
   left: 0%;
 }
 
@@ -423,6 +425,8 @@ a:visited {
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
   float: left;
+  /* width: 11vw; */
+  /* height: 4vh; */
 }
 
 .Code-button {
@@ -433,7 +437,7 @@ a:visited {
 
   /* 使用宽高 vm,vh设置 div 块的宽高*/
   width: 9.5vw;
-  height: 4.8vh;
+  height: 5.8vh;
   font-size: 1.3vh;
 
   /* 圆角 */
@@ -455,4 +459,11 @@ a:visited {
 
   /* 使用宽高 vm,vh设置 div 块的宽高 */
   background-color: orange;
+}
+
+.Title-Name {
+  font-size: 3vh;
+  color: rgb(14, 13, 13);
+  position: relative;
+  top: -22%;
 }

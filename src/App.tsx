@@ -23,26 +23,20 @@ function App() {
         <div className="Main-content">
           精彩内容，即将呈现
         </div>
-
         {/* <img
-          src={art_adt_combination}
-          alt="logo"
-          className="Advaita-Coin"
-        /> */}
+        src={art_adt_combination}
+        alt="logo"
+        className="Advaita-Coin"
+      /> */}
 
         <div className="App-header">
           <div className="App-Navigation-Header">
             <div className="Column">
               <Navigation_Header />
             </div>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/login"
-            >
-              <div className="Login">
-                <ConnectWallet />
-              </div>
-            </Link>
+            <div className="Login">
+              <ConnectWallet />
+            </div>
           </div>
         </div>
       </div>
