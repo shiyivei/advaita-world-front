@@ -6,7 +6,8 @@ import Research from "../pages/Research";
 import Deck from "../pages/Deck";
 import NFTReborn from "../pages/NFTReborn";
 import OmSatWatch from "../pages/OmSatWatch";
-import Login from "../pages/Login";
+import LoginWithCode from "../pages/LoginWithCode";
+import LoginWithPassword from "../pages/LoginWithPassword";
 
 import App from "../App";
 
@@ -58,8 +59,12 @@ const URLRouter = (props: any) => {
             element={<App />}
           ></Route>
           <Route
-            path="/login"
-            element={<Login />}
+            path="/loginwithpassword"
+            element={<LoginWithPassword />}
+          ></Route>
+          <Route
+            path="/loginwithcode"
+            element={<LoginWithCode />}
           ></Route>
         </Routes>
       </BrowserRouter>

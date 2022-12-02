@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import advaita_world_logo from "../pages/statics/img/backgroud-logo.png";
 import Navigation_Header from "./Navigation-Header";
 import Navigation_Tail from "./Navigation-Tail";
-import ConnectWallet from "../components/Wallet";
+import ConnectWallet from "../components/RegisterOrLogin";
 import TestRouter from "./TestRouter";
 import React, {
   useState,

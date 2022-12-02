@@ -4,7 +4,7 @@ import advaita_world_logo from "./pages/statics/img/backgroud-logo.png";
 import art_adt_combination from "./pages/statics/img/art-adt-combination.png";
 import Navigation_Header from "./pages/Navigation-Header";
 import Navigation_Tail from "./pages/Navigation-Tail";
-import ConnectWallet from "./components/Wallet";
+import ConnectWallet from "./components/RegisterOrLogin";
 import { Link } from "react-router-dom";
 import React, {
   useState,

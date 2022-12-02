@@ -1,38 +1,20 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import { redirect } from "react-router-dom";
 import "./Pages.css";
 import "../App.css";
-import advaita_world_logo from "../pages/statics/img/backgroud-logo.png";
-import art_adt_combination from "../pages/statics/img/art-adt-combination.png";
 
 import { Link } from "react-router-dom";
 import Navigation_Header from "./Navigation-Header";
 import Navigation_Tail from "./Navigation-Tail";
-import ConnectWallet from "../components/Wallet";
+import RegisterOrLogin from "../components/RegisterOrLogin";
 import TestRouter from "./TestRouter";
 import axios from "axios";
 
-import { useState, useEffect } from "react";
-
-import {
-  Button,
-  Checkbox,
-  Form,
-  Input,
-  Space,
-} from "antd";
-import {
-  EyeInvisibleOutlined,
-  EyeTwoTone,
-} from "@ant-design/icons";
+import { Base64 } from "js-base64";
 
 class Login extends React.Component {
-  // class Login extends React.Component {
   state = {
     InputMail: "", //输入邮箱
     InputCode: "", //输入验证码
-    InputPassword: "", //输入密码
     time: 60,
     btnDisable: false,
     btnContent: "发送验证码",
@@ -44,6 +26,7 @@ class Login extends React.Component {
       InputMail: event.target.value,
     });
   };
+
   handleGetInputCode = (event: any) => {
     // 定义要获取的值,并绑定事件
     this.setState({
@@ -60,110 +43,67 @@ class Login extends React.Component {
   handleForm = (form: any) => {
     const { InputMail } = this.state;
     const { InputCode } = this.state;
-    const { InputPassword } = this.state;
 
     console.log(
       "------get form value:",
       InputMail,
-      InputCode,
-      InputPassword
+      InputCode
     );
-  };
-
-  handleMail = () => {
-    // 在函数中将值绑定并使用
-    const { InputMail } = this.state;
-    // 对获取到的值进行操作，比如发dispatch等
-    console.log("------Get Mail is", InputMail);
-    this.sendVerifyCode(InputMail);
+    this.verifyCode(InputMail, InputCode);
   };
 
   sendVerifyCode = async (mail: any) => {
-    let url: string =
-      "https://api-connect.2fei2.com/Api/Index/getCode/type/login/to/" +
-      mail;
+    let base64Mail = Base64.encode(mail);
+    const params = {
+      type: "login",
+      to: base64Mail,
+    };
+    let url: string = "/api1/Api/Index/getCode";
+    let test_url: string =
+      "/api3/Api/Index/getCode";
 
-    console.log("请求的路径:", url);
+    console.log("发送验证码:", url);
 
-    await axios.get(url).then((res) => {
+    await axios
+      .post(test_url, params)
+      .then((res) => {
+        console.log(
+          "测试验证码发送结果:",
+          JSON.stringify(res.data)
+        );
+      });
+
+    await axios.post(url, params).then((res) => {
       console.log(
-        "--------------------------------data:",
+        "验证码发送结果:",
         JSON.stringify(res.data)
       );
     });
   };
 
-  // const [time, setCount] = useState(60);
+  verifyCode = async (
+    mail: string,
+    verify_code: string
+  ) => {
+    let base64Mail = Base64.encode(mail);
 
-  // timeClick = () => {
-  //   let times = time;
-  //   let timer = setInterval(function () {
-  //     if (times < 1) {
-  //       setCount(60);
-  //       clearInterval(timer);
-  //     } else {
-  //       times -= 1;
-  //       setCount(times);
-  //     }
-  //   }, 1000);
-  // };
-  //   return (
-  //     <>
-  //       <div>
-  //         <div className="App">
-  //           <div className="App-body">
-  //             <div className="Mail-Block">
-  //               <Form
-  //                 name="basic"
-  //                 labelCol={{ span: 8 }}
-  //                 wrapperCol={{ span: 16 }}
-  //                 initialValues={{ remember: true }}
-  //                 onFinish={onFinish}
-  //                 onFinishFailed={onFinishFailed}
-  //                 autoComplete="off"
-  //               >
-  //                 <ul className="Mail-list">
-  // <li className="Input-Email">
-  //   <Form.Item
-  //     // label="Username"
-  //     name="email address"
-  //     rules={[
-  //       {
-  //         // required: true,
-  //         // message: "请输入验证码",
-  //       },
-  //     ]}
-  //   >
-  //     <Input placeholder="请输入邮件地址" />
-  //   </Form.Item>
-  // </li>
+    const params = {
+      type: "login",
+      to: base64Mail,
+      code: verify_code,
+    };
 
-  //                   <li className="Submit-Data">
-  //                     <Form.Item
-  //                       wrapperCol={{
-  //                         offset: 8,
-  //                         span: 16,
-  //                       }}
-  //                     >
-  //                       <Button
-  //                         className="Submit-button"
-  //                         type="primary"
-  //                         htmlType="submit"
-  //                       >
-  //                         登录
-  //                       </Button>
-  //                     </Form.Item>
-  //                   </li>
-  //                 </ul>
-  //               </Form>
-  //             </div>
+    let url: string = "/api2/Api/Index/checkCode";
 
-  //           </div>
+    console.log("验证验证码:", url);
 
-  //         </div>
-  //       </div>
-  //     </>
-  //   );
+    await axios.post(url, params).then((res) => {
+      console.log(
+        "验证码验证结果:",
+        JSON.stringify(res.data)
+      );
+    });
+  };
 
   render() {
     let timeChange: any;
@@ -183,7 +123,7 @@ class Login extends React.Component {
         clearInterval(timeChange);
         this.setState({
           btnDisable: false,
-          time: 10,
+          time: 60,
           btnContent: "发送验证码",
         });
       }
@@ -192,10 +132,16 @@ class Login extends React.Component {
     const sendCode = () => {
       this.setState({
         btnDisable: true,
-        btnContent: "60s后重新发送",
+        btnContent: "60s 后重新发送",
       });
       //每隔一秒执行一次clock方法
       timeChange = setInterval(clock, 1000);
+
+      // 在函数中将值绑定并使用
+      const { InputMail } = this.state;
+      // 对获取到的值进行操作，比如发dispatch等
+      console.log("------Get Mail is", InputMail);
+      this.sendVerifyCode(InputMail);
     };
 
     return (
@@ -204,7 +150,7 @@ class Login extends React.Component {
           <div className="App-body">
             <div className="Mail-Block">
               <div className="Title-Name">
-                Welcome to login Advaita
+                验证码登录
               </div>
               <ul className="Mail-list">
                 <li className="Input-Email">
@@ -227,7 +173,6 @@ class Login extends React.Component {
                     />
                     <button
                       className="Code-button"
-                      // onClick={this.handleMail}
                       onClick={sendCode}
                       disabled={
                         this.state.btnDisable
@@ -237,22 +182,14 @@ class Login extends React.Component {
                     </button>
                   </div>
                 </li>
-                <li className="Input-Password">
-                  <input
-                    placeholder="请输入登录密码"
-                    id="password"
-                    type="password"
-                    value={
-                      this.state.InputPassword
-                    }
-                    onChange={
-                      this.handleGetInputPassword
-                    }
-                  />
-                </li>
-                <li className="Check-Remember">
-                  <Checkbox>Remember me</Checkbox>
-                </li>
+
+                {/* <li className="Check-Remember">
+                  <div className="Check-Box">
+                    <Checkbox>
+                      Remember me
+                    </Checkbox>
+                  </div>
+                </li> */}
                 <li>
                   <button
                     className="Submit-button"
@@ -260,6 +197,18 @@ class Login extends React.Component {
                   >
                     登录
                   </button>
+                </li>
+                <li>
+                  <Link
+                    style={{
+                      textDecoration: "none",
+                    }}
+                    to="/loginwithpassword"
+                  >
+                    <div className="LoginPassWord">
+                      使用密码登录
+                    </div>
+                  </Link>
                 </li>
               </ul>
             </div>
