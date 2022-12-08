@@ -6,133 +6,136 @@
 }
 
 .App {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  background-image: url("./pages/statics/img/background.png");
-  overflow: auto;
-  overflow-x: hidden;
-}
-
-.App-header {
-  display: flex;
-  height: 12vh;
-  width: 100vw;
+  /* display: flex; */
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
 
-  margin: 0;
+  /* 使用宽高 vm,vh设置 div 块的宽高*/
+  /* width: 50vw; */
+  height: 300vh;
+  overflow: hidden;
+
+  background-color: black;
+}
+
+.Body {
+  /* display: flex; */
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
+  height: 100vh;
+  width: 100%;
+
+  /* background-color: orange; */
+}
+
+.BG {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
+  position: relative;
+  top: 39%;
+
+  height: 10vh;
+  width: 100%;
+
+  /* border: 5px solid black; */
+
+  /* background-color: yellow; */
+}
+
+.Navigation {
+  height: 10vh;
+  width: 100%;
+
   position: fixed;
-  /* margin-top: 12vh; */
-  top: 0;
-  background-color: rgba(14, 9, 9, 0.343);
+  top: -2%;
+
+  /* border: 5px solid black; */
+  z-index: 10;
+  /* background-color: yellow; */
 }
 
-.App-body {
+.Play {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
-  height: 110vh;
-  /* background-color: rgb(233, 27, 27); */
-  margin: 0;
-  color: white;
-}
 
-.App-tail {
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
-  height: 12vh;
-  /* background-color: rgb(29, 28, 28); */
-  margin: 0;
-}
-
-.App-Navigation-Header {
-  margin: auto;
+  height: 10vh;
   width: 100%;
+  color: rgb(255, 255, 255);
+
+  font-size: 6vh;
+  font-weight: bold;
+
+  position: relative;
+  top: 63%;
+
+  /* border: 5px solid black; */
+  z-index: 9;
+  /* background-color: cyan; */
+}
+
+.Watch {
   display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
-  /* background-color: rgb(255, 153, 0); */
+
+  height: 35vh;
+  width: 100%;
+  color: rgb(255, 255, 255);
+
+  font-size: 6vh;
+  font-weight: bold;
+
+  position: relative;
+  top: 80%;
+
+  z-index: 9;
+  /* background-color: cyan; */
 }
 
-.App-Navigation-Tail {
-  width: 100%;
+.Tail {
   display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
-  /* background-color: rgb(255, 153, 0); */
-}
 
-.Advaita-Logo {
-  width: 15%;
-  top: -5%;
   position: relative;
-  animation: loading 60s linear infinite;
-  /* background-color: rgb(255, 153, 0); */
-}
+  bottom: -62%;
 
-.Advaita-Coin {
-  width: 5%;
-  top: -51%;
-  left: -47%;
-  position: relative;
-  animation: loading 60s linear infinite;
-  /* background-color: rgb(255, 153, 0); */
-}
-
-@keyframes loading {
-  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
-  0% {
-    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-  /* from {
-    top: -50%;
-  }
-  to {
-    top: -20%;
-  } */
-
-  /* 0% { */
-  /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
-  /* transform: scale(0); */
-  /* } */
-  /* 100% { */
-  /* transform: scale(100%); */
-  /* } */
-}
-
-.Column {
-  position: relative;
+  height: 10vh;
   width: 100%;
-  left: -3%;
+  z-index: 10;
 
-  /* background-color: rgb(148, 143, 143); */
+  border: 5px solid black;
+
+  /* background-color: rgb(47, 47, 45); */
 }
 
-.Login {
-  width: 15%;
-  position: relative;
-  right: 8%;
-  /* height: 15vh; */
-}
+.Login-Home {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  border-radius: 10px;
 
-.Main-content {
-  font-size: 2vw;
-  color: orange;
-  position: relative;
+  height: 3vh;
+  width: 4%;
 
-  top: 5%;
-}
+  position: fixed;
+  bottom: 93.5%;
+  left: 82%;
 
-.Login-button {
-  width: 15%;
-  position: relative;
-  right: -50%;
-  height: 15vh;
+  z-index: 12;
+
+  font-size: 2.4vh;
+
+  background-color: orange;
 }

@@ -1,17 +1,253 @@
 .main-app {
   text-align: center;
   bottom: 20%;
+  height: 1000vh;
 }
 
 .cta-button {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
   padding: 5%;
   border: none;
   border-radius: 20px;
-  color: white;
-  width: 100%;
+  color: rgb(0, 0, 0);
+  width: 10vh;
+  height: 1.7vw;
+  font-weight: bold;
+
   cursor: pointer;
   position: relative;
-  /* background-color: yellow; */
-  background: rgb(32, 129, 226);
+
+  background: rgba(255, 166, 0, 0.788);
   font-size: 1.2vw;
+}
+
+/* .Wheel {
+  background-color: red;
+} */
+
+.Logo11 {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  height: 180%;
+  /* width: 60%; */
+  /* animation: loading11 60s linear infinite; */
+  /* background-color: rgb(236, 224, 0); */
+}
+@keyframes loading11 {
+  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+  0% {
+    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.Logo10 {
+  position: absolute;
+  z-index: 2;
+  height: auto;
+  height: 94%;
+  /* width: 110%; */
+  animation: loading11 60s linear infinite;
+  /* background-color: rgb(236, 224, 0); */
+}
+@keyframes loading10 {
+  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+  0% {
+    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Logo7 {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  width: 112%;
+  animation: loading71 1000s linear infinite,
+    loading72 8s linear infinite;
+
+  animation-delay: 2s;
+
+  /* background-color: rgb(0, 248, 186); */
+}
+@keyframes loading71 {
+  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+  0% {
+    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes loading72 {
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+.Logo6 {
+  position: absolute;
+  z-index: 2;
+
+  height: auto;
+  width: 61%;
+  animation: loading61 800s linear infinite,
+    loading62 6s linear infinite;
+
+  /* background-color: rgb(0, 248, 186); */
+}
+@keyframes loading61 {
+  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+  0% {
+    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading62 {
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+.Logo8 {
+  position: relative;
+
+  z-index: 3;
+  height: auto;
+  width: 140%;
+  /* background-color: rgb(0, 248, 186); */
+  /* animation: loading8 6s infinite; */
+}
+
+.Logo5 {
+  position: absolute;
+  z-index: 3;
+  height: auto;
+  width: 35%;
+  /* animation: loading5 240s linear infinite; */
+  /* background-color: rgb(0, 248, 186); */
+}
+
+@keyframes loading5 {
+  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+  0% {
+    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.Logo4 {
+  position: absolute;
+  z-index: 4;
+  height: auto;
+  width: 27.5%;
+  animation: loading4 180s linear infinite;
+}
+@keyframes loading4 {
+  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+  0% {
+    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Logo3 {
+  position: absolute;
+  z-index: 5;
+  height: auto;
+  width: 16.8%;
+  animation: loading3 120s linear infinite;
+  /* background-color: rgb(236, 224, 0); */
+}
+@keyframes loading3 {
+  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+  0% {
+    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.Logo2 {
+  position: absolute;
+  z-index: 6;
+  height: auto;
+  width: 11%;
+  animation: loading2 60s linear infinite;
+  /* background-color: rgb(236, 224, 0); */
+}
+@keyframes loading2 {
+  /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+  0% {
+    /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Logo1 {
+  position: absolute;
+  z-index: 7;
+  height: auto;
+  width: 7.3%;
+  /* background-color: red; */
+}
+
+.Arr {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  border-radius: 10px;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: -1%;
+  left: 0%;
+
+  /* background-color: rgb(191, 194, 193); */
+}
+
+.Upcoming {
+  color: orange;
+  position: relative;
+  top: -340%;
 }

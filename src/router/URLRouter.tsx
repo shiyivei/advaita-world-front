@@ -8,6 +8,8 @@ import NFTReborn from "../pages/NFTReborn";
 import OmSatWatch from "../pages/OmSatWatch";
 import LoginWithCode from "../pages/LoginWithCode";
 import LoginWithPassword from "../pages/LoginWithPassword";
+import Register from "../pages/Register";
+import WhitepaperVersion from "../components/WhitePaperVersion";
 
 import App from "../App";
 
@@ -65,6 +67,10 @@ const URLRouter = (props: any) => {
           <Route
             path="/loginwithcode"
             element={<LoginWithCode />}
+          ></Route>
+          <Route
+            path="/register"
+            element={<Register />}
           ></Route>
         </Routes>
       </BrowserRouter>

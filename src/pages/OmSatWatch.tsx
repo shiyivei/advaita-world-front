@@ -2,61 +2,30 @@ import { useParams } from "react-router-dom";
 import advaita_world_logo from "../pages/statics/img/backgroud-logo.png";
 import Navigation_Header from "./Navigation-Header";
 import Navigation_Tail from "./Navigation-Tail";
-import ConnectWallet from "../components/RegisterOrLogin";
+import ConnectWallet from "../components/Login";
 import TestRouter from "./TestRouter";
-import React, {
-  useState,
-  useEffect,
-} from "react";
 
-export default function ClaimSNS() {
-  const [message, setMessage] = useState("test");
-
-  useEffect(() => {
-    console.log(mail);
-  });
-
-  const [mail, setMail] = useState([]);
-
-  const handChangeValue = (e: any) => {
-    setMail(e.target.value);
-  };
-
+import Navigation from "../pages/Navigation-Header";
+import BG from "../components/BG";
+import Tail from "../pages/Navigation-Tail";
+import Upcoming from "../components/Upcoming";
+export default function OMSATWATCH() {
   return (
     <div>
       <div className="App">
-        <div className="App-body">
-          <img
-            src={advaita_world_logo}
-            alt="logo"
-            className="Advaita-Logo"
-          />
-          <div className="Main-content">
-            精彩内容，即将呈现
+        <div className="Body">
+          <div className="BG">
+            <BG />
           </div>
-
-          {/* <img
-      src={art_adt_combination}
-      alt="logo"
-      className="Advaita-Coin"
-    /> */}
-
-          <div className="App-header">
-            <div className="App-Navigation-Header">
-              <div className="Column">
-                <Navigation_Header />
-              </div>
-              <div className="Login">
-                <ConnectWallet />
-              </div>
-            </div>
+          <div className="Navigation">
+            <Navigation />
+          </div>
+          <div className="Play">
+            <Upcoming />
           </div>
         </div>
-
-        <div className="App-tail">
-          <div className="App-Navigation-Tail">
-            <Navigation_Tail />
-          </div>
+        <div className="Tail">
+          <Tail />
         </div>
       </div>
     </div>

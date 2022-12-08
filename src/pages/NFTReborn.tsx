@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import advaita_world_logo from "../pages/statics/img/backgroud-logo.png";
 import Navigation_Header from "../pages/Navigation-Header";
 import Navigation_Tail from "../pages/Navigation-Tail";
-import ConnectWallet from "../components/RegisterOrLogin";
+import ConnectWallet from "../components/Login";
 
 export default function NFTReborn() {
   return (

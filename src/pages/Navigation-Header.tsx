@@ -2,15 +2,28 @@ import React from "react";
 import { Button } from "antd";
 import { Link } from "react-router-dom";
 import "./Pages.css";
+import Login from "../components/Login";
+import home_logo9 from "../pages/statics/img/homepage/9.png";
 
 export default function Navigation_Header() {
   return (
     <div>
       <div className="Header-List">
         <ul className="Navigation-Header">
+          <li>
+            <Link
+              className="Logo9"
+              style={{
+                textDecoration: "none",
+              }}
+              to="/"
+            >
+              <img src={home_logo9} alt="logo" />
+            </Link>
+          </li>
           <li className="GenesisCollection">
             <a href="https://advaitaworld.myshopify.com/?_ab=0&_fd=0&_sc=1">
-              Omsat Store
+              STORE
             </a>
           </li>
           <li className="Research">
@@ -20,20 +33,28 @@ export default function Navigation_Header() {
               }}
               to="/research"
             >
-              Research
+              RESEARCH
             </Link>
           </li>
           <li className="Whitepaper">
-            <a href="https://advaita.gitbook.io/whitepaper/">
-              Whitepaper
-            </a>
+            {/* <a href="https://advaita.gitbook.io/whitepaper/">
+              WHITEPAPER
+            </a> */}
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              to="/whitepaper"
+            >
+              WHITEPAPER
+            </Link>
           </li>
           <li className="OmSatWatch">
             <Link
               style={{ textDecoration: "none" }}
               to="/omsatwatch"
             >
-              Omsat Watch
+              OMSAT
             </Link>
           </li>
           <li className="AdvaitaDAO">
@@ -41,22 +62,14 @@ export default function Navigation_Header() {
               style={{ textDecoration: "none" }}
               to="/cakrawatch"
             >
-              Cakra Watch
+              CAKRA
             </Link>
           </li>
           <li className="GenesisCollection">
             <a href="https://drive.google.com/file/d/1CJy7n-h_KffLeSO9vB8TJm1YU5fOQmUP/view?usp=sharing">
-              Deck
+              DECK
             </a>
           </li>
-          {/* <li className="NFTReborn">
-            <Link
-              style={{ textDecoration: "none" }}
-              to="nftreborn"
-            >
-              NFTReborn
-            </Link>
-          </li> */}
         </ul>
       </div>
     </div>

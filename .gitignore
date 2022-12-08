@@ -12,6 +12,7 @@
 /build
 /src/pages/LoginWithCode.tsx
 /src/pages/LoginWithPassword.tsx
+/src/pages/Register.tsx
 
 
 # misc
