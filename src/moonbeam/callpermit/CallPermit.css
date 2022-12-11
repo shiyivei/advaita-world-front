@@ -1,0 +1,100 @@
+.Ca {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center;
+  /* background-color: rgb(255, 196, 0); */
+
+  /* 使用宽高 vm,vh设置 div 块的宽高*/
+  width: 66vw;
+  height: 50vh;
+
+  /* 圆角 */
+  border-radius: 10px;
+  position: relative; /* 位置定位相对,使用top,bottom,left,right 移动位置 */
+  top: 0%;
+  left: 0%;
+
+  /* margin: 0.1vh 15vw 0vh 15vw; */
+
+  z-index: 10;
+  /* background-color: rgb(0, 0, 0); */
+  /* border: 2px solid #ae6bf0; */
+  background-color: #d3a8ff;
+}
+.callPermit {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center;
+  /* background-color: rgb(255, 196, 0); */
+
+  /* 使用宽高 vm,vh设置 div 块的宽高*/
+  width: 15vw;
+  height: 6vh;
+  border-radius: 10px;
+
+  position: relative; /* 位置定位相对,使用top,bottom,left,right 移动位置 */
+  top: -10%;
+  left: 0%;
+  color: black;
+  font-size: 3vh;
+
+  /* margin: 0.1vh 15vw 0vh 15vw; */
+
+  z-index: 10;
+  /* background-color: rgb(0, 0, 0); */
+  /* border: 2px solid #ae6bf0; */
+  /* background-color: skyblue; */
+}
+
+.Dispatch {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center;
+  /* background-color: rgb(255, 196, 0); */
+
+  /* 使用宽高 vm,vh设置 div 块的宽高*/
+  /* width: 60vw;
+  height: 20vh; */
+
+  position: relative; /* 位置定位相对,使用top,bottom,left,right 移动位置 */
+  top: 0%;
+  left: 0%;
+
+  /* margin: 0.1vh 15vw 0vh 15vw; */
+
+  z-index: 10;
+  /* background-color: rgb(0, 0, 0); */
+  /* border: 2px solid #ae6bf0; */
+  /* background-color: #c5c1c9; */
+}
+
+.Dispatch input {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center; /* 水平居中 */
+  align-items: center;
+
+  border-radius: 5px;
+
+  width: 8vw;
+  height: 3vh;
+
+  margin: 0.5vh 0.1vw 0.5vh 0.1vw;
+}
+
+.Dispatch button {
+  width: 20vw;
+  height: 3.35vh;
+  color: aqua;
+  font-size: 1.6vh;
+  border-radius: 10px;
+  position: relative;
+  /* top: 50%; */
+
+  margin: 3vh 0.1vw 0.5vh 0.1vw;
+
+  background-color: rgb(19, 12, 50);
+}

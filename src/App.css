@@ -49,15 +49,142 @@
 }
 
 .Navigation {
-  height: 10vh;
+  display: flex;
+  flex-direction: row; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
+  /* 使用宽高 vm,vh设置 div 块的宽高*/
   width: 100%;
+  height: 10vh;
+
+  /* 圆角 */
+  border-radius: 10px;
+
+  /* 字体设置 */
+  font-size: 1.5vw;
+  color: rgb(255, 255, 255);
+
+  position: relative; /* 位置定位相对,使用top,bottom,left,right 移动位置 */
+  top: -10%;
+  left: 0%;
+
+  z-index: 15;
+
+  /* 边框样式 */
+  /* border: 0.2vh solid rgb(226, 17, 17); */
+
+  /* background-color: rgb(0, 0, 0); */
+}
+
+.Logo-Home {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
+  /* 使用宽高 vm,vh设置 div 块的宽高*/
+  width: 10vw;
+  height: 5vh;
+
+  /* 圆角 */
+  border-radius: 5px;
+
+  /* 字体设置 */
+  font-size: 1.2vw;
+  color: rgb(255, 255, 255);
+
+  position: fixed; /* 位置定位相对,使用top,bottom,left,right 移动位置 */
+  /* top: 2.75%; */
+  left: 12%;
+
+  z-index: 13;
+  overflow: hidden;
+
+  /* 调整增大外边距 上 右 下 左 */
+  /* margin: 0vh 65vw 0vh 10vw; */
+  /* 调整增大内边距 上 右 下 左 */
+  padding: 0vh 0vw 0vh 0vw;
+
+  /* 边框样式 */
+  /* border: 0.2vh solid rgb(226, 17, 17); */
+  /* background-color: rgb(199, 193, 182); */
+
+  /* background-color: rgb(238, 0, 0); */
+}
+
+.home_logo {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
 
   position: fixed;
-  top: -2%;
+  /* bottom: -62%; */
+  /* left: 8vw; */
+  border-radius: 10px;
+
+  height: 5vh;
+  width: 10vw;
+  z-index: 15;
 
   /* border: 5px solid black; */
-  z-index: 10;
-  /* background-color: yellow; */
+
+  /* background-color: rgb(255, 255, 85); */
+}
+
+.Navigation-Home {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
+  /* 使用宽高 vm,vh设置 div 块的宽高*/
+  width: 55%;
+  height: 5vh;
+
+  /* 圆角 */
+  border-radius: 10px;
+
+  /* 字体设置 */
+  font-size: 1.5vw;
+  color: rgb(255, 255, 255);
+
+  position: fixed; /* 位置定位相对,使用top,bottom,left,right 移动位置 */
+  /* top: -10%; */
+  /* left: 0%; */
+
+  z-index: 11;
+
+  /* 调整增大外边距 上 右 下 左 */
+  margin: 0.1vh 10vw 0vh 10vw;
+  /* 调整增大内边距 上 右 下 左 */
+  padding: 0vh 0vw 0vh 0vw;
+
+  /* 边框样式 */
+  /* border: 0.2vh solid rgb(226, 17, 17); */
+  /* background-color: orange; */
+}
+
+.Login-Home {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
+  position: fixed;
+  /* bottom: -62%; */
+  left: 78%;
+  border-radius: 10px;
+
+  height: 3.5vh;
+  width: 4vw;
+  z-index: 15;
+  font-size: 1.2vw;
+
+  /* border: 5px solid black; */
+
+  /* background-color: rgba(255, 191, 30, 0.786); */
 }
 
 .Play {
@@ -112,30 +239,9 @@
 
   height: 10vh;
   width: 100%;
-  z-index: 10;
+  z-index: 15;
 
   border: 5px solid black;
 
   /* background-color: rgb(47, 47, 45); */
-}
-
-.Login-Home {
-  display: flex;
-  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
-  border-radius: 10px;
-
-  height: 3vh;
-  width: 4%;
-
-  position: fixed;
-  bottom: 93.5%;
-  left: 82%;
-
-  z-index: 12;
-
-  font-size: 2.4vh;
-
-  background-color: orange;
 }

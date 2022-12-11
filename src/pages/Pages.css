@@ -38,7 +38,7 @@ a:hover {
   align-items: center; /* 垂直居中 */
   width: 10%;
   /* 调整增大外边距 上 右 下 左 */
-  margin: 0vh 0.3vw 0vh 0.3vw;
+  margin: 0vh 2vw 0vh 2vw;
   /* 调整增大内边距 上 右 下 左 */
   padding: 0vh 0vw 0vh 0vw;
   /* background-color: orange; */

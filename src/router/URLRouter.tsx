@@ -10,6 +10,8 @@ import LoginWithCode from "../pages/LoginWithCode";
 import LoginWithPassword from "../pages/LoginWithPassword";
 import Register from "../pages/Register";
 import WhitepaperVersion from "../components/WhitePaperVersion";
+import Moonbeam from "../moonbeam/Moonbeam";
+import IOTEX from "../iotex/IPage";
 
 import App from "../App";
 
@@ -71,6 +73,14 @@ const URLRouter = (props: any) => {
           <Route
             path="/register"
             element={<Register />}
+          ></Route>
+          <Route
+            path="/moonbeam"
+            element={<Moonbeam />}
+          ></Route>
+          <Route
+            path="/iotex"
+            element={<IOTEX />}
           ></Route>
         </Routes>
       </BrowserRouter>

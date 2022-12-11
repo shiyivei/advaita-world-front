@@ -3,24 +3,12 @@ import { Button } from "antd";
 import { Link } from "react-router-dom";
 import "./Pages.css";
 import Login from "../components/Login";
-import home_logo9 from "../pages/statics/img/homepage/9.png";
 
 export default function Navigation_Header() {
   return (
     <div>
       <div className="Header-List">
         <ul className="Navigation-Header">
-          <li>
-            <Link
-              className="Logo9"
-              style={{
-                textDecoration: "none",
-              }}
-              to="/"
-            >
-              <img src={home_logo9} alt="logo" />
-            </Link>
-          </li>
           <li className="GenesisCollection">
             <a href="https://advaitaworld.myshopify.com/?_ab=0&_fd=0&_sc=1">
               STORE
