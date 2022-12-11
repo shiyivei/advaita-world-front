@@ -201,7 +201,7 @@ export default function MPage() {
             </div>
 
             <div className="readmore">
-              more ... coming soon
+              More ... Coming soon
             </div>
           </div>
         </div>

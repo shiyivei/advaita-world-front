@@ -24,7 +24,7 @@ export default function Whitepaper() {
           </div>
           <div className="ChooseVersion">
             <button className="EN">
-              <a href="https://advaita.gitbook.io/whitepaper-english//">
+              <a href="https://advaita.gitbook.io/whitepaper-english/">
                 ENGLISH
               </a>
             </button>
