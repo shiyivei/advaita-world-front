@@ -120,8 +120,8 @@
   align-items: center; /* 垂直居中 */
 
   position: fixed;
-  /* bottom: -62%; */
-  /* left: 8vw; */
+  bottom: 92.5%;
+  left: 12vw;
   border-radius: 10px;
 
   height: 5vh;

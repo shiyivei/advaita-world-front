@@ -51,42 +51,42 @@ a:hover {
   align-items: center; /* 垂直居中 */
 
   width: 100%;
-  margin: 0vh 3vw 0vh 3vw;
+  margin: 0vh 2vw 0vh 2vw;
   /* 调整增大内边距 上 右 下 左 */
   padding: 0vh 0vw 0vh 0vw;
   /* background-color: orange; */
 }
 
 .Twitter {
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
 }
 
 .Discord {
   color: black;
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   position: relative;
 }
 
 .Telegram {
   color: black;
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   position: relative;
 }
 
 .Youtube {
   color: black;
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   position: relative;
 }
 
 .Medium {
   color: black;
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   position: relative;
 }
 
@@ -764,7 +764,7 @@ a:visited {
   color: rgb(255, 255, 255);
 
   position: relative; /* 位置定位相对,使用top,bottom,left,right 移动位置 */
-  top: 23.5%;
+  top: 13%;
   left: 0%;
   z-index: 11;
 
@@ -781,7 +781,7 @@ a:visited {
   width: 20vw;
   height: 5vh;
   color: rgb(255, 255, 255);
-  font-size: 2vh;
+  font-size: 2.5vh;
   /* background-color: #ffffff; */
   position: relative;
   /* right: -5%; */
@@ -801,7 +801,7 @@ a:visited {
   width: 20vw;
   height: 5vh;
   color: rgb(255, 255, 255);
-  font-size: 2vh;
+  font-size: 2.5vh;
   /* background-color: #ffffff; */
   position: relative;
   /* right: -5%; */

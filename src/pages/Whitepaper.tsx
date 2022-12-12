@@ -1,15 +1,11 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { redirect } from "react-router-dom";
-import home_logo8 from "../pages/statics/img/homepage/8.png";
-import home_logo7 from "../pages/statics/img/homepage/7.png";
-import home_logo6 from "../pages/statics/img/homepage/6.png";
-
 import Navigation from "../pages/Navigation-Header";
 
 import BG from "../components/BG";
 
 import Tail from "../pages/Navigation-Tail";
+import { Link } from "react-router-dom";
+import home_logo9 from "../pages/statics/img/homepage/9.png";
+import Back from "../components/Back";
 
 export default function Whitepaper() {
   return (
@@ -20,7 +16,26 @@ export default function Whitepaper() {
             <BG />
           </div>
           <div className="Navigation">
-            <Navigation />
+            <Link
+              className="Logo-Home"
+              style={{
+                textDecoration: "none",
+              }}
+              to="/"
+            >
+              <img
+                src={home_logo9}
+                alt="logo"
+                className="home_logo"
+              />
+            </Link>
+
+            <div className="Navigation-Home">
+              <Navigation />
+            </div>
+            <div className="Login-Home">
+              <Back />
+            </div>
           </div>
           <div className="ChooseVersion">
             <button className="EN">
