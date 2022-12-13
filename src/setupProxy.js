@@ -34,4 +34,15 @@ module.exports = function (app) {
       secure: false,
     })
   );
+
+  app.use(
+    createProxyMiddleware("/api4", {
+      target: "http://localhost:81",
+      pathRewrite: {
+        "^/api4": "",
+      },
+      changeOrigin: true,
+      secure: false,
+    })
+  );
 };

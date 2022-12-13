@@ -1,0 +1,42 @@
+.Test-Length {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
+  position: relative;
+  top: -400%;
+
+  height: 800px;
+  width: 800px;
+
+  background-color: red;
+}
+.a {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  width: 200px;
+  width: 500px;
+  background-color: green;
+}
+.b {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  width: 200px;
+  width: 500px;
+
+  background-color: rgb(142, 164, 142);
+}
+.c {
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  width: 200px;
+  width: 500px;
+  background-color: rgb(211, 185, 16);
+}

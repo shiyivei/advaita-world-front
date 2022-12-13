@@ -12,6 +12,7 @@ import Register from "../pages/Register";
 import WhitepaperVersion from "../components/WhitePaperVersion";
 import Moonbeam from "../moonbeam/Moonbeam";
 import IOTEX from "../iotex/IPage";
+import LoginSuccess from "../pages/LoginSuccess";
 
 import App from "../App";
 
@@ -81,6 +82,10 @@ const URLRouter = (props: any) => {
           <Route
             path="/iotex"
             element={<IOTEX />}
+          ></Route>
+          <Route
+            path="/loginsuccess"
+            element={<LoginSuccess />}
           ></Route>
         </Routes>
       </BrowserRouter>
