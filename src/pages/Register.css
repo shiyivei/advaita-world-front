@@ -1,11 +1,18 @@
 .Mail-Name {
-  font-size: 30px;
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  font-size: 20px;
   color: rgb(255, 255, 255);
   position: relative;
   text-align: center;
+  width: 360px;
+  height: 50px;
 
-  /* top: -15; */
-  background-color: blue;
+  top: 5%;
+  z-index: 5;
+  /* background-color: blue; */
 }
 .RegisterForm {
   display: flex;
@@ -14,6 +21,11 @@
   align-items: center; /* 垂直居中 */
   /* background-color: rgb(27, 177, 207); */
   border-radius: 30px;
+  height: 280px;
+
+  position: relative;
+
+  /* top: 10%; */
 
   /* 使用宽高 vm,vh设置 div 块的宽高*/
   /* width: 32vw;
@@ -26,11 +38,14 @@
 }
 
 .Mail-Form {
-  width: 380px;
-  height: 800px;
-  background-color: red;
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
+  background-color: rgb(131, 7, 159);
   position: relative;
-  top: -450%;
+  top: -445%;
   border-radius: 10px;
 }
 
@@ -41,7 +56,7 @@
   align-items: center; /* 垂直居中 */
   background-color: white;
   height: 50px;
-  width: 360px;
+  width: 340px;
   /* height: 4.5vh;
   width: 21.5vw; */
   border-radius: 10px;
@@ -68,7 +83,7 @@
   background-color: white;
   border-color: white;
   /* border-color: white; */
-  font-size: 1.2vh;
+  font-size: 16px;
   background-color: orange;
 }
 
@@ -106,7 +121,7 @@
   width: 120%;
   background-color: orange;
   color: black;
-  font-size: 1.3vh;
+  font-size: 13px;
   margin: 0.5vh 0.1vw 0.5vh 0vw;
 }
 .Code01 input {
@@ -142,17 +157,18 @@
 .Login0 {
   display: flex;
   flex-direction: row; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
-  justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
 
-  margin: -1vh -2px 0.5vh -2px;
+  /* margin: 0 -2px 0 -2px; */
   /* height: 4.5vh;
   width: 21.5vw; */
 
-  width: 300px;
+  width: 360px;
+  height: 50px;
 
   position: relative;
-  top: 5%;
+  top: -5%;
 
   /* height: 4.5vh;
   width: 21.5vw; */
@@ -165,15 +181,28 @@
 }
 
 .Login01 {
-  /* background-color: rgb(21, 25, 70); */
-  width: 200px;
+  /* background-color: rgb(127, 130, 155); */
+  width: 50%;
   /* width: 10vw; */
-  margin: 0.5vh 2px 0.5vh 0vw;
+  position: relative;
+  left: -5%;
+
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
   /* color: black; */
 }
 .Login02 {
-  width: 200px;
-  /* background-color: rgb(180, 219, 114); */
-  margin: 0.5vh -2px 0.5vh 0vw;
+  width: 50%;
+  /* background-color: rgb(0, 0, 0); */
+
+  position: relative;
+  display: flex;
+  flex-direction: column; /* 使用 column 或者 row 竖直、水瓶排列 div 块中的元素*/
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+
   /* color: black; */
 }
