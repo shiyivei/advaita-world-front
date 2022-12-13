@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/src/env.tsx
+
 
 # testing
 /coverage
@@ -16,6 +16,8 @@
 /src/pages/Register.tsx
 /src/iotex/utilis
 /src/moonbeam/utilis
+/src/env.tsx
+
 
 
 # misc
@@ -25,6 +27,7 @@
 .env.test.local
 .env.production.local
 /src/bsc/utilis/env/
+
 
 
 
